@@ -50,7 +50,7 @@
     "navigationBarBackgroundColor": "#eb4450",
     "navigationBarTitleText": "黑马优购",
     "navigationBarTextStyle": "white"
-  },
+  }, 
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

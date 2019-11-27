@@ -1,0 +1,59 @@
+// Page {
+//     background-color: #f4f4f4;
+// }
+
+//轮播图样式
+.warp {
+    swiper {
+        height: 340rpx;
+    }
+}
+
+//导航栏样式
+.nva {
+    display: flex;
+    padding: 5px 0;
+    background-color: #fff;
+
+    .nav_item {
+        flex: 1;
+        text-align: center;
+
+        .img {
+            width: 70%;
+        }
+    }
+}
+
+/* swiper宽/swiper高？ = 图片宽/图片高 */
+
+//楼层样式
+.shop {
+    .shoping {
+        .title {
+            padding: 5px;
+            // background-color: #f4f4f4;
+        }
+
+        .product_list {
+            overflow: hidden;
+            height: 750rpx/3 * 386 / 232;
+            background-color: #fff;    
+            .nav {
+                float: left;
+                width: 33.33%;
+                image {
+                   display: block;
+                }
+
+                &:nth-last-child(-n+4) {
+                    image {
+                        height: (750rpx/3 * 386 / 232/2)+1
+                    }
+                }
+            }
+
+
+        }
+    }
+}

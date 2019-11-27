@@ -1,6 +1,34 @@
-swiper{
-    height: 340rpx;
+.warp swiper {
+  height: 340rpx;
 }
-
-
+.nva {
+  display: flex;
+  padding: 5px 0;
+  background-color: #fff;
+}
+.nva .nav_item {
+  flex: 1;
+  text-align: center;
+}
+.nva .nav_item .img {
+  width: 70%;
+}
 /* swiper宽/swiper高？ = 图片宽/图片高 */
+.shop .shoping .title {
+  padding: 5px;
+}
+.shop .shoping .product_list {
+  overflow: hidden;
+  height: 415.94827586rpx;
+  background-color: #fff;
+}
+.shop .shoping .product_list .nav {
+  float: left;
+  width: 33.33%;
+}
+.shop .shoping .product_list .nav image {
+  display: block;
+}
+.shop .shoping .product_list .nav:nth-last-child(-n+4) image {
+  height: 208.97413793rpx;
+}
