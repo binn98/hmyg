@@ -1,0 +1,6 @@
+swiper{
+    height: 340rpx;
+}
+
+
+/* swiper宽/swiper高？ = 图片宽/图片高 */
