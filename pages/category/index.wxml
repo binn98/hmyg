@@ -1,2 +1,33 @@
-<!--pages/category/index.wxml-->
-<text>pages/category/index.wxml</text>
+<!-- 搜索组件引入 -->
+<search_input></search_input>
+
+<!-- 分类页面开始 -->
+
+<view class="wrap">
+    <!-- 分类菜单 -->
+    <view class="left_muen">
+        <view class="muen_item {{clickIndex==index? 'active':''}}" bindtap="muenIndex" data-index="{{index}}"
+            wx:for="{{menu}}" wx:key="item">{{item}}</view>
+    </view>
+    <!-- 分类菜单详情页 -->
+    <scroll-view scroll-y scroll-top="{{scroll}}" class="right_list">
+        <view class="muen_item_list" wx:for="{{rightdata}}" wx:for-item="item1" wx:key="cat_id">
+            <!-- 分类标题层 -->
+            <view class="item_title">/{{item1.cat_name}}/</view>
+            <!-- 品牌列表 -->
+
+            <view class="title_list">
+                <view class="item2_list" wx:for="{{item1.children}}" wx:for-item="item2" wx:key="cat_id">
+                    <image src="{{item2.cat_icon}}" mode="widthFix" />
+                    <view class="item2_title">
+                        {{item2.cat_name}}
+                    </view>
+
+
+                </view>
+            </view>
+
+        </view>
+    </scroll-view>
+
+</view>
