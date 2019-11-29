@@ -20,7 +20,6 @@
 .shop .shoping .product_list {
   overflow: hidden;
   height: 415.94827586rpx;
-  background-color: #fff;
 }
 .shop .shoping .product_list .nav {
   float: left;
