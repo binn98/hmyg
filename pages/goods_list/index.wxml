@@ -1,2 +1,15 @@
-<!--pages/goods_list/index.wxml-->
-<text>pages/goods_list/index.wxml</text>
+<!-- 商品列表 -->
+<navigator url="/pages/goods_detail/index?id={{item.goods_id}}" class="list_wrap" wx:for="{{list}}" wx:key='goods_id'>
+    <!-- 左则商品图片 -->
+   <view class="left_img">
+       <image src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1575113099&di=5885aff4f0114e3accfa3108030558e9&src=http://img.zcool.cn/community/01cea05755a4d06ac72525ae9cadcd.jpg@2o.jpg" mode="widthFix"  />  
+   </view> 
+   <!-- 右侧商品描述 -->
+   <view class="right_conent">
+       <text class="title">{{item.goods_name}}</text>
+        <view class="goods_price">
+            ￥{{item.goods_price}}
+        </view>    
+   </view>
+</navigator>
+  

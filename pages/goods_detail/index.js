@@ -1,18 +1,25 @@
 // pages/goods_detail/index.js
+import axios from '../../pcblib/axios'
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    goods_id:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad(options) {
+    this.setData({goods_id:options.id})
+    const goods_id = options.id
+    axios({
+      url:'/goods/detail',
+      data:{goods_id}
+    }).then(res=>{console.log(res.data);}
+    )
   },
 
   /**

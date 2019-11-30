@@ -58,6 +58,14 @@
 					"id": -1,
 					"name": "分类",
 					"pathName": "pages/category/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "品牌列表页",
+					"pathName": "pages/goods_list/index",
+					"query": "cid=6&query=海信",
 					"scene": null
 				}
 			]
