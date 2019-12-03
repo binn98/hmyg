@@ -3,6 +3,7 @@ page,view,text,image,button,input,swiper,swiper-item,navigator,checkbox,rich-tex
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --zhutise:#eb4450;
 }
 
 image{

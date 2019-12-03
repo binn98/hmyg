@@ -1,40 +1,18 @@
-// pages/goods_detail/index.js
-import axios from '../../pcblib/axios'
+// pages/img/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-   goodsInfo:{}
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad(options) {
-    // this.setData({goods_id:options.id})
-    const goods_id = options.id
-    axios({
-      url:'/goods/detail',
-      data:{goods_id}
-    }).then(res=>{
-      this.setData({goodsInfo:res.data.message})
-      console.log(this.data.goodsInfo);
-      console.log(res.data);
-      
-    }
-    )
-  },
-  // 轮播图大图展示
-  imgbig(e){
-    const urls = this.data.goodsInfo.pics.map(v=>v.pics_big)
-    const current = e.currentTarget.dataset.src
-    wx.previewImage({
-      current, // 当前显示图片的http链接
-      urls // 需要预览的图片http链接列表
-    })
-    
+  onLoad: function (options) {
+
   },
 
   /**
